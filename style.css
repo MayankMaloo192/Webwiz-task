@@ -1,0 +1,327 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+.left-side .menu-bar ul li{
+    list-style: none;
+    align-items: center;
+
+}
+
+.menu-bar li a{
+    text-decoration: none;
+    display: inline;
+    justify-content: center;
+    
+    padding: 5px 24px;
+    font-size: 20px;
+    font-weight: normal;
+    /* font-style:  ; */
+    
+}
+.left-side .menu-bar ul{
+  
+  
+    display: flex;
+    /* justify-content: right; */
+    justify-content:space-around;
+
+    
+}
+.menu-bar li a:hover{
+    color: burlywood;
+    cursor: pointer;
+}
+.left-side{
+    display:flex;
+    padding:11px 60px;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+
+.menu-bar{
+   display: block;
+   padding: 5px 310px;
+}
+ 
+
+.right {
+       float:right;
+       margin-inline-end: 15px;
+       margin-left: 30px;
+   }
+  .right img{
+      padding-top: 2px;
+      
+    }
+ 
+    /* //////////////////////////////////////////// Header Section Completed//////////////////////////*/
+    
+    /*targeting to left side box */
+  .container{
+      display: flex;
+      justify-content: space-between;
+
+  }
+  .container .left_box, .container .right_box{
+     
+      margin: 0px 20px;
+  }
+  
+   .left_box{
+       width: 445px;
+       height: 478px;
+       position: relative;
+       
+    }
+    .left_box .contact{
+        display: inline-block;
+        position: absolute;
+   
+        top: 28px;
+        left: 68px;
+    height: 150px;
+    width: fit-content;
+/* line-height: 3px; */
+}
+.container .left_box .shipping_box{
+
+  position: absolute;
+  left: 61px;
+  top: 210px;
+  height: 150px;
+  width: auto;
+}
+.contact .shift{
+    display: flex;
+    padding-right: 2px;
+    justify-content:flex-end;
+}
+.contact .shift h3{
+    margin-inline-end: 59px;
+    font-size: 25px;
+    
+}
+.contact .shift p{
+    margin-left: 40px;
+    font-size: 20px;
+   
+}
+.shift p a{
+    color: #56B280;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 1px;
+}
+.shift p a:hover{
+    color: burlywood;
+    cursor: pointer;
+}
+.contact .input{
+    border: 1px solid grey;
+    display:inline;
+   
+    position: absolute;
+    top: 40px;
+}
+.input .email{
+    font-size: 25px;
+    
+    padding: 4px;
+}
+.contact .checked{
+    position: absolute;
+    top: 91px;
+}
+
+
+.contact .checked label, .forms .checked label{
+    padding:2px;
+    font-size: 22px;
+}
+/* ////Shipping address section /////*/
+.shipping_box .address{
+    position:relative;
+}
+.shipping_box .address h2{
+    position: absolute;
+    display: contents;
+    letter-spacing: 1.2px;
+    text-decoration: solid;
+}
+.shipping_box .address .forms{
+    position:absolute;
+    top: 40px;
+    margin-bottom: 30px;
+    width: 500px;
+}
+
+.shipping_box .address .forms .values{
+   font-size: 23px;
+   padding:1.5px 1px;
+   margin-bottom: 8px;
+  }
+/* /////////////////////Forms////////// */
+.forms .Name .values{
+    width: 148px;
+   float: left;
+   margin-right: 4px;
+   text-transform: capitalize;
+}
+.forms .city .values, .forms .one{
+    width: 100px;
+    float: left;
+    margin-right: 6px;
+    
+    border-radius: 2px;
+    margin-bottom: 1.5px;
+    
+}
+
+
+.forms .one select{
+    width: 100px;
+    opacity: 0.75;
+
+}
+.forms .country{
+    width: 250px;
+    font-size: 22px;
+    
+    opacity: 0.75;
+    border-radius: 2px;
+}
+.forms .country select{
+    outline: none;
+    font-size: 20px;
+    opacity: 1;
+
+}
+
+.address .submit{
+    position: absolute;
+    top: 266px;
+    right: -50%;
+}
+.address .submit ul{
+    display:flex;
+    /* flex-basis: content; */
+        width: max-content;
+        /* padding: 1px 3px; */
+        
+        
+    }
+    .address .submit ul li{
+        list-style: none;
+        align-items: center;
+        padding: 0px 5px ;
+        justify-content:space-around;
+        margin-inline-end: auto;
+    }
+    .address .submit ul .Back a{
+        /* text-decoration: none; */
+        color: #56B280;
+        font-size: 22px;
+       padding-inline-end: 55px;
+    }
+    .address .submit ul .Back a:hover{
+        color: #060707;
+    }
+    .address .submit ul .Go a{
+        text-decoration: none;
+        color: white;
+        background-color: #18e072;
+        font-size: 22px;
+       padding-inline-start: 2px;
+       text-align: center;
+       
+
+    }
+    .address .submit ul .Go a:hover{
+        background-color:white;
+        color: #060707;
+    }
+    /* //Left Section Completed/// */
+    /* ////Right box///// */
+    .right_box{
+        width: 710px;
+        background: color #2e0b0b;
+        position: relative;
+        background-color:#F2F2F2;
+        
+    }
+    .right_box .preview{
+        position:absolute;
+        display:flex;
+
+        background-color:#F7F8FA;
+        left: 55px;
+        top: 50px;
+    
+    }
+    /* .right_box .preview .img{
+        border: 1px solid green;
+        position:absolute;
+        top: 80px;
+        left: 40px;
+        width:212px;
+        } */
+        .right_box .candle{
+            position:absolute;
+            left: 270px;
+         width: max-content;
+         background-color:#F7F8FA;
+         font-size: 25px;
+        }
+        .right_box .candle span{
+            color: #18e072;
+            font-size: 25px;
+           
+        }
+        .right_box .price{
+            position: absolute;
+            top: 206px;
+            left: 55px;
+
+        }
+        .right_box .price #coupon,.right_box .price #Add{
+            padding: 2px 10px;
+            background-color: white;
+            border: 1px solid #b6b2b2;
+            font-size: 25px;
+            border-radius: 5px;
+        }
+        .right_box .price #Add:hover{
+            color: black;
+            background-color:grey;
+            border-radius: 5px;
+            margin-left : 15px;
+            }
+            .right_box .finalprice1{
+                position:absolute;
+                top: 270px;
+                display: flex;left: 110px;
+            }
+            .right_box .finalprice2{
+                position:absolute;
+                top: 350px; display: flex;left: 110px;
+                
+            }
+            .right_box .finalprice3{
+                position:absolute;
+                top: 420px; display: flex;left: 110px;
+            }
+            .finalprice h4,.finalprice span{
+                align-self: flex-end;
+                margin-inline-end: 60px;
+            
+             }
+            
+
+
+   
